@@ -20,7 +20,7 @@ public static class BookService
             Console.WriteLine("AddBook");
             Console.WriteLine("Ingrese el Id del libro");
             int id = Convert.ToInt32(Console.ReadLine());
-            
+
             var ubicar = books.FirstOrDefault(x => x.Id == id);
             if (ubicar == null)
             {
@@ -53,8 +53,8 @@ public static class BookService
 
             return ex.Message;
         }
-        
-        
+
+
     }
 
     //Modificar libro
@@ -101,7 +101,7 @@ public static class BookService
                 return $"Error: {ex.Message}";
             }
 
-            
+
         }
     }
 
@@ -135,7 +135,7 @@ public static class BookService
 
                 return $"Error: {ex.Message}";
             }
-            
+
         }
     }
 
@@ -156,7 +156,6 @@ public static class BookService
         return message;
 
     }
-
 
 }
 

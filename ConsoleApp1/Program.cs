@@ -7,7 +7,6 @@ while (true)
     //Para borrar la pantalla en cada vuelva del bucle
     Console.Clear();
 
-
     //Creo un metodo que se llama cada vez que necesito una opcion
     //Como el metodo devuelve un numero, lo guardo en la varible 
     var opcion = Options();
@@ -61,10 +60,6 @@ static int Options()
         Console.WriteLine("Formato incorrecto de numero. Intente de nuevo");
         return 0;
     }
-
-
-
-
 
 }
 
